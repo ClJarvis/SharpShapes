@@ -1,0 +1,14 @@
+C:\Users\chris\Documents\GitHub\SharpShapes\SharpShapes\bin\Debug\SharpShapes.exe.config
+C:\Users\chris\Documents\GitHub\SharpShapes\SharpShapes\bin\Debug\SharpShapes.exe
+C:\Users\chris\Documents\GitHub\SharpShapes\SharpShapes\bin\Debug\SharpShapes.pdb
+C:\Users\chris\Documents\GitHub\SharpShapes\SharpShapes\obj\Debug\SharpShapes.csprojResolveAssemblyReference.cache
+C:\Users\chris\Documents\GitHub\SharpShapes\SharpShapes\obj\Debug\MainWindow.g.cs
+C:\Users\chris\Documents\GitHub\SharpShapes\SharpShapes\obj\Debug\App.g.cs
+C:\Users\chris\Documents\GitHub\SharpShapes\SharpShapes\obj\Debug\SharpShapes_MarkupCompile.cache
+C:\Users\chris\Documents\GitHub\SharpShapes\SharpShapes\obj\Debug\SharpShapes_MarkupCompile.lref
+C:\Users\chris\Documents\GitHub\SharpShapes\SharpShapes\obj\Debug\MainWindow.baml
+C:\Users\chris\Documents\GitHub\SharpShapes\SharpShapes\obj\Debug\SharpShapes.g.resources
+C:\Users\chris\Documents\GitHub\SharpShapes\SharpShapes\obj\Debug\SharpShapes.Properties.Resources.resources
+C:\Users\chris\Documents\GitHub\SharpShapes\SharpShapes\obj\Debug\SharpShapes.csproj.GenerateResource.Cache
+C:\Users\chris\Documents\GitHub\SharpShapes\SharpShapes\obj\Debug\SharpShapes.exe
+C:\Users\chris\Documents\GitHub\SharpShapes\SharpShapes\obj\Debug\SharpShapes.pdb
