@@ -1,14 +1,40 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Shapes;
+using System.Drawing;
 
 namespace UnitTestShapes
 {
     [TestClass]
-    public class UnitTest1
+    public class AbstractShapeTests
     {
-        [TestMethod]
-        public void TestMethod1()
+        private class MyMockShape : Shape
         {
+            public override float Area()
+            {
+                throw new NotImplementedException();
+            }
+
+            public override float Perimeter()
+            {
+                throw new NotImplementedException();
+            }
         }
+
+        MyMockShape omgMyShape = new MyMockShape();
+
+        [TestMethod]
+        public void TestingAbstractClassHasFillColor()
+        {
+            omgMyShape.FillColor = Color.PapayaWhip;
+            Assert.AreEqual(Color.PapayaWhip, omgMyShape.FillColor);
+        }
+        [TestMethod]
+        public void TestingAbstractClassHasBorderColor()
+        {
+            omgMyShape.BorderColor = Color.NavajoWhite;
+            Assert.AreEqual(Color.NavajoWhite, omgMyShape.BorderColor);
+        }
+        
     }
 }
