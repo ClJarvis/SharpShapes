@@ -17,7 +17,7 @@ namespace Shapes
 
         public override float Perimeter()
         {
-            return this.Side1 + this.Side2 + this.Side3 + this.Side4;
+            return this.Side1 + this.Side2 + this.Side1 + this.Side2;
         }
     }
 }

@@ -30,31 +30,21 @@ namespace UnitTestShapes
         [TestMethod]
         public void retangletest()
         {
-            rectangle rectangle = new rectangle();
-            rectangle.Side1 = 4;
-            rectangle.Side2 = 5;
-            rectangle.Side3 = 4;
-            rectangle.Side4 = 5;
+            rectangle rectangle = new rectangle(4, 5);
             Assert.AreEqual(20, rectangle.Area());
         }
 
         [TestMethod]
         public void myrectanglePermimeter()
         {
-            rectangle rectangle = new rectangle();
-            rectangle.Side1 = 4;
-            rectangle.Side2 = 5;
-            rectangle.Side3 = 4;
-            rectangle.Side4 = 5;
+            rectangle rectangle = new rectangle(4, 5);
             Assert.AreEqual(18, rectangle.Perimeter());
         }
 
         [TestMethod]
         public void MySquare()
         {
-            square square = new square();
-            square.Side1 = 3;
-            square.Side2 = 3;
+            square square = new square(3);
             Assert.AreEqual(9, square.Area());
         }
     }

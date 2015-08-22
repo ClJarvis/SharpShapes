@@ -7,7 +7,17 @@ using System.Threading.Tasks;
 namespace Shapes
 {
     public class rectangle : Quaddrilaterial
+
     {
+        public rectangle()
+        {
+
+        }
+        public rectangle(float length, float height)
+        {
+            this.Side1 = length;
+            this.Side2 = height;
+        }
         public override float Area()
         {
             return (Side1 * Side2);

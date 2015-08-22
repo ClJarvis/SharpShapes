@@ -6,11 +6,15 @@ using System.Threading.Tasks;
 
 namespace Shapes
 {
-    public class square : Quaddrilaterial
+    public class square : rectangle
     {
+        public square(float side1)
+        {
+            this.Side1 = side1;
+        }
         public override float Area()
         {
-            return (Side1 * Side2);
+            return (Side1 * Side1);
         }
     }
 }
