@@ -8,9 +8,9 @@ namespace Shapes
 {
     public class square : rectangle
     {
-        public square(float side1)
+        public square(float side1) : base(side1, side1)
         {
-            this.Side1 = side1;
+            
         }
         public override float Area()
         {
