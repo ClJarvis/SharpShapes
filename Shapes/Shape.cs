@@ -10,11 +10,14 @@ namespace Shapes
     public abstract class Shape : IShape
     {
         // we need info about colors
-        Color fillColor;
-        Color borderColor;
+       // protected Color fillColor;
+       //protected Color borderColor;
 
-        public Color FillColor { get; set; }
-        public Color BorderColor { get; set; }
+            /// <summary>
+            /// "protected Set" allows child classes to use the setter!
+            /// </summary>
+        public Color FillColor { get; /*protected  */set; }
+        public Color BorderColor { get; /*protected */ set; }
 
         public abstract float Area();
 

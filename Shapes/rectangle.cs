@@ -6,13 +6,10 @@ using System.Threading.Tasks;
 
 namespace Shapes
 {
-    public class rectangle : Quaddrilaterial
+    public class rectangle : Quadrilateral
 
     {
-        public rectangle()
-        {
-
-        }
+        
         public rectangle(float length, float height)
         {
             this.Side1 = length;

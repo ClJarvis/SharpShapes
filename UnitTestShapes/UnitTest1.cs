@@ -10,6 +10,8 @@ namespace UnitTestShapes
     {
         private class MyMockShape : Shape
         {
+         
+
             public override float Area()
             {
                 throw new NotImplementedException();
@@ -33,6 +35,7 @@ namespace UnitTestShapes
         public void TestingAbstractClassHasBorderColor()
         {
             omgMyShape.BorderColor = Color.NavajoWhite;
+           // omgMyShape.BorderColor = Color.PapayaWhip;
             Assert.AreEqual(Color.NavajoWhite, omgMyShape.BorderColor);
         }
         

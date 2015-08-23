@@ -7,7 +7,7 @@ namespace UnitTestShapes
     [TestClass]
     public class UnitTest2 //QuadrilateralTests
     {
-        public class MyFakeQuadilaterailTestClass : Quaddrilaterial
+        public class MyFakeQuadilaterailTestClass : Quadrilateral
         {
             public override float Area()
             {
@@ -16,15 +16,41 @@ namespace UnitTestShapes
             }
         }
 
+
+        [TestMethod]
+        public void TestQuadHasDefaultSize()
+        {
+           Quadrilateral myquad = new Quadrilateral();
+            myquad.Perimeter();
+        }
+
         [TestMethod]
         public void TestQuadrilateralCanComputePermimeter()
         {
-            Quaddrilaterial myQuaddrilaterial = new MyFakeQuadilaterailTestClass();
-            myQuaddrilaterial.Side1 = 2;
-            myQuaddrilaterial.Side2 = 4;
-            myQuaddrilaterial.Side3 = 99;
-            myQuaddrilaterial.Side4 = 6;
-            Assert.AreEqual(myQuaddrilaterial.Perimeter(), 111);
+            Quadrilateral myQuaddrilaterial = new MyFakeQuadilaterailTestClass();
+            myQuaddrilaterial.top = 2;
+            myQuaddrilaterial.right = 2;
+            myQuaddrilaterial.left = 2;
+            myQuaddrilaterial.bottom = 2;
+            Assert.AreEqual(8, myQuaddrilaterial.Perimeter());
+        }
+
+        [TestMethod]
+        public void TestQuadrilateralCanComputePermimeter2()
+        {
+            Quadrilateral myQuaddrilaterial = new MyFakeQuadilaterailTestClass();
+            myQuaddrilaterial.top = 2;
+            myQuaddrilaterial.right = 2;
+            myQuaddrilaterial.left = 2;
+            myQuaddrilaterial.bottom = 2;
+            Assert.AreEqual(8, myQuadrilateral2.Perimeter());
+        }
+
+        [TestMethod]
+        public void testQudaPermietreAreTheSame()
+        {
+            Quadrilateral myquad = new Quaddrilaterial(2, 2, 2, 2);
+            Assert.AreEqual(8, myquad.Perimeter());
         }
 
         [TestMethod]
