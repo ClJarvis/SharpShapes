@@ -18,19 +18,19 @@ namespace Shapes
 
         public abstract override float Area();
 
-        public override float Perimeter(/*float top, float bottom, float left, float right*/)
-        {
-            return this.top + this.right + this.left + this.bottom;
-        }
-
-        public float Perimeter()
+   //   public override float Perimeter(/*float top, float bottom, float left, float right*/)
+     //   {
+    //        return this.top + this.right + this.left + this.bottom;
+      //  }
+   
+        public override float Perimeter()
         {
             if (top == 0.0 || bottom == 0.0 || left == 0.0 || right == 0.0)
             {
-                throw new ArgumentException()
+                throw new ArgumentException();
             } else
             {
-
+                return top + bottom + left + right;
             }
         }
     }
