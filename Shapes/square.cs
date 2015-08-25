@@ -8,7 +8,7 @@ namespace Shapes
 {
     public class square : rectangle
     {
-        public square(float side1) : base(side1, side1)
+        public square(float Top, float Right, float Left, float Bottom) : base(Top)
         {
             
         }

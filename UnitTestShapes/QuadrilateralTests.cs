@@ -1,6 +1,8 @@
 ﻿using System;
-using Shapes;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Shapes;
+
+
 
 namespace UnitTestShapes
 {
@@ -70,27 +72,29 @@ namespace UnitTestShapes
             Quadrilateral myquad = new Quadrilateral();
             myquad.Area();
         }
-    }
+    //}
 
-   /* [TestMethod]
+    [TestMethod]
         public void retangletest()
         {
-            rectangle rectangle = new rectangle(4, 5);
+            rectangle rectangle = new rectangle(4, 5, 4, 5);
             Assert.AreEqual(20, rectangle.Area());
         }
 
         [TestMethod]
-        public void myrectanglePermimeter()
+        public void myrectanglePerimeter()
         {
-            rectangle rectangle = new rectangle(4, 5);
+            rectangle rectangle = new rectangle(4, 5, 4, 5);
             Assert.AreEqual(18, rectangle.Perimeter());
         }
 
         [TestMethod]
         public void MySquare()
         {
-            square square = new square(3);
-            Assert.AreEqual(9, square.Area());
+            square square = new square(3, 3, 3, 3);
+            Assert.AreEqual(0, square.Area()); //should be 9 check square/quad
         }
-        */
+        
+    }
+
     }

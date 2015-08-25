@@ -9,11 +9,19 @@ namespace Shapes
     public class rectangle : Quadrilateral
 
     {
-        
-        public rectangle(float length, float height)
+        private float top;
+
+        public rectangle(float top)
         {
-            this.Top = length; //side1
-            this.Right = height; //side2
+            this.top = top;
+        }
+
+        public rectangle(float Top, float Right, float Left, float Bottom)
+        {
+            this.Top = Top; //side1
+            this.Right = Right; //side2
+            this.Left = Left;
+            this.Bottom = Bottom;
         }
         public override float Area()
         {
