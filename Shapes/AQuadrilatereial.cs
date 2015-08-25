@@ -8,6 +8,6 @@ namespace Shapes
 {
     public class AQuadrilatereial
     {
-
+        //excercise for the reader.
     }
 }

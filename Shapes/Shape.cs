@@ -19,6 +19,13 @@ namespace Shapes
         public Color FillColor { get; /*protected  */set; }
         public Color BorderColor { get; /*protected */ set; }
 
+        //Comes from the Concreteshape class in ShapeTest.
+        public Shape()
+        {
+            BorderColor = Color.NavajoWhite;
+            FillColor = Color.PapayaWhip;
+        }
+
         public abstract float Area();
 
         public abstract float Perimeter();

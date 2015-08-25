@@ -12,12 +12,17 @@ namespace Shapes
         
         public rectangle(float length, float height)
         {
-            this.Side1 = length;
-            this.Side2 = height;
+            this.Top = length; //side1
+            this.Right = height; //side2
         }
         public override float Area()
         {
-            return (Side1 * Side2);
+            return (Top * Right); //Side1 * Side2
         }
-    }
+
+     /*   public override float Perimeter()
+        {
+            throw new NotImplementedException();
+        } */ ///intellsense suggestion for rectangle
+    }  
 }

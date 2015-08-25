@@ -14,7 +14,7 @@ namespace Shapes
         }
         public override float Area()
         {
-            return (Side1 * Side1);
+            return (Top * Top);
         }
     }
 }

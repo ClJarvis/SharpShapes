@@ -6,32 +6,104 @@ using System.Threading.Tasks;
 
 namespace Shapes
 {
-    public abstract class Quadrilateral : Shape
+    public  class Quadrilateral : Shape //added abstract
     {
-        public float top { get; set; }
-        public float right { get; set; }
-        public float left { get; set; }
-        public float bottom { get; set; }
+        private float top;
+        private float bottom;
+        private float left;
+        private float right;
+        public float Top
+        {
+            get { return top; }
+            set
+            {
+                if (value <= 0.0)
+                {
+                    throw new ArgumentException();
+                }
+                else
+                {
+                    top = value;
+                }
+            }
+        }
+        public float Bottom
+        {
+            get { return bottom; }
+            set
+            {
+                if (value <= 0.0)
+                {
+                    throw new ArgumentException();
+                }
+                else
+                {
+                    bottom = value;
+                }
+            }
+        }
+        public float Left
+        {
+            get { return left; }
+            set
+            {
+                if (value <= 0.0)
+                {
+                    throw new ArgumentException();
+                }
+                else
+                {
+                    left = value;
+                }
+            }
 
-        // Calls Shape's Constructor that provides default fill & border colors.
-        public Quadrilateral  () : base() {}
+        }
+        public float Right
+        {
+            get { return right; }
+            set
+            {
+                if (value <= 0.0)
+                {
+                    throw new ArgumentException();
+                }
+                else
+                {
+                    right = value;
+                }
+            }
+        }
 
-        public abstract override float Area();
+        // Calls Shape's Constructor that provides default fill and border colors.
+        public Quadrilateral() : base() { }
 
-   //   public override float Perimeter(/*float top, float bottom, float left, float right*/)
-     //   {
-    //        return this.top + this.right + this.left + this.bottom;
-      //  }
-   
+        public Quadrilateral(float top, float bottom, float left, float right) : base()
+        {
+            this.Top = top;
+            this.Bottom = bottom;
+            this.Left = left;
+            this.Right = right;
+        }
+
+        //public abstract override float Area();
+
+        // Shape's Constructor is called BEFORE the supplied code block.
         public override float Perimeter()
         {
-            if (top == 0.0 || bottom == 0.0 || left == 0.0 || right == 0.0)
+            if (Top == 0.0 || Bottom == 0.0 || Left == 0.0 || Right == 0.0)
             {
                 throw new ArgumentException();
-            } else
-            {
-                return top + bottom + left + right;
             }
+            else
+            {
+                return Top + Bottom + Left + Right;
+            }
+
+        }
+
+        public override float Area()
+        {
+            throw new NotImplementedException();
         }
     }
 }
