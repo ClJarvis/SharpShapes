@@ -87,6 +87,19 @@ namespace Shapes
 
         //public abstract override float Area();
 
+        public override float Area() 
+        {
+            if (Top == 0.0 || Bottom == 0.0 || Left == 0.0 || Right == 0.0)
+            {
+                throw new ArgumentException();
+            }
+            else
+            {
+                return Top * Right;
+            }
+        }
+
+
         // Shape's Constructor is called BEFORE the supplied code block.
         public override float Perimeter()
         {
@@ -101,9 +114,6 @@ namespace Shapes
 
         }
 
-        public override float Area()
-        {
-            throw new NotImplementedException();
-        }
+      
     }
 }

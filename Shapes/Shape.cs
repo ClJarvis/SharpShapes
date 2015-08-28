@@ -10,12 +10,12 @@ namespace Shapes
     public abstract class Shape : IShape
     {
         // we need info about colors
-       // protected Color fillColor;
-       //protected Color borderColor;
+        // protected Color fillColor;
+        //protected Color borderColor;
 
-            /// <summary>
-            /// "protected Set" allows child classes to use the setter!
-            /// </summary>
+        /// <summary>
+        /// "protected Set" allows child classes to use the setter!
+        /// </summary>
         public Color FillColor { get; /*protected  */set; }
         public Color BorderColor { get; /*protected */ set; }
 
@@ -26,9 +26,10 @@ namespace Shapes
             FillColor = Color.PapayaWhip;
         }
 
-        public abstract float Area();
+        public virtual float Area() { throw new NotImplementedException(); }
 
-        public abstract float Perimeter();
+        public virtual float Perimeter() {throw new NotImplementedException(); }
+    }
        
     }
-}
+

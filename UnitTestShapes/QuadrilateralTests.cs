@@ -66,13 +66,16 @@ namespace UnitTestShapes
         }
 
         [TestMethod]
-        [ExpectedException(typeof(NotImplementedException))]
         public void TestQuadCanComputeArea()
         {
             Quadrilateral myquad = new Quadrilateral();
-            myquad.Area();
+            myquad.Top = 3;
+            myquad.Right = 3;
+            myquad.Left = 3;
+            myquad.Bottom = 3;
+            Assert.AreEqual(9, myquad.Area());
         }
-    //}
+
 
     [TestMethod]
         public void retangletest()
@@ -92,7 +95,7 @@ namespace UnitTestShapes
         public void MySquare()
         {
             square square = new square(3, 3, 3, 3);
-            Assert.AreEqual(0, square.Area()); //should be 9 check square/quad
+            Assert.AreEqual(9, square.Area()); //should be 9 check square/quad
         }
         
     }
