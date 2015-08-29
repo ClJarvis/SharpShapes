@@ -78,7 +78,7 @@ namespace UnitTestShapes
 
 
     [TestMethod]
-        public void retangletest()
+        public void retangleAreaTest()
         {
             rectangle rectangle = new rectangle(4, 5);
             Assert.AreEqual(20, rectangle.Area());
@@ -92,10 +92,10 @@ namespace UnitTestShapes
         }
 
         [TestMethod]
-        public void MySquare()
+        public void MySquareAreaTest()
         {
             square square = new square(3);
-            Assert.AreEqual(9, square.Area()); //should be 9 check square/quad
+            Assert.AreEqual(9, square.Area()); 
         }
         
     }
