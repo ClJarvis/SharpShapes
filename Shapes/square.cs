@@ -8,16 +8,10 @@ namespace Shapes
 {
     public class square : rectangle 
     {
-        public square(float Top, float Right, float Left, float Bottom) : base(Top)
+        public square(float side): base(side, side)
         {
-            this.Top = Top; 
-            this.Right = Right; 
-            this.Left = Left;
-            this.Bottom = Bottom;
+            
         }
-        public override float Area()
-        {
-            return Top * Right;
-        }
+       
     }
 }

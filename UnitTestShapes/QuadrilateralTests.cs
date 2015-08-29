@@ -80,21 +80,21 @@ namespace UnitTestShapes
     [TestMethod]
         public void retangletest()
         {
-            rectangle rectangle = new rectangle(4, 5, 4, 5);
+            rectangle rectangle = new rectangle(4, 5);
             Assert.AreEqual(20, rectangle.Area());
         }
 
         [TestMethod]
         public void myrectanglePerimeter()
         {
-            rectangle rectangle = new rectangle(4, 5, 4, 5);
+            rectangle rectangle = new rectangle(4, 5);
             Assert.AreEqual(18, rectangle.Perimeter());
         }
 
         [TestMethod]
         public void MySquare()
         {
-            square square = new square(3, 3, 3, 3);
+            square square = new square(3);
             Assert.AreEqual(9, square.Area()); //should be 9 check square/quad
         }
         

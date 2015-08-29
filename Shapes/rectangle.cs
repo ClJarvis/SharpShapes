@@ -11,17 +11,14 @@ namespace Shapes
     {
         private float top;
 
-        public rectangle(float top)
-        {
-            this.top = top;
-        }
+        
 
-        public rectangle(float Top, float Right, float Left, float Bottom)
+        public rectangle(float width, float length)
         {
-            this.Top = Top; //side1
-            this.Right = Right; //side2
-            this.Left = Left;
-            this.Bottom = Bottom;
+            this.Top = width; //side1
+            this.Right = length; //side2
+            this.Left = length;
+            this.Bottom = width;
         }
         public override float Area()
         {
