@@ -25,9 +25,6 @@ namespace Shapes
             return (Top * Right); //Side1 * Side2
         }
 
-     /*   public override float Perimeter()
-        {
-            throw new NotImplementedException();
-        } */ ///intellsense suggestion for rectangle
+   
     }  
 }

@@ -4,7 +4,9 @@ using Shapes;
 using System.Drawing;
 
 namespace UnitTestShapes
-{
+{ /// <summary>
+/// /Alternate Version of abstract tets
+/// </summary>
     [TestClass]
     public class AbstractShapeTests
     {
