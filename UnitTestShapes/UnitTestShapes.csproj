@@ -56,6 +56,8 @@
     <Compile Include="UnitTest1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="QuadrilateralTests.cs" />
+    <None Include="rectangleTest" />
+    <None Include="SquareTests" />
     <None Include="ShapeTest" />
   </ItemGroup>
   <ItemGroup>
