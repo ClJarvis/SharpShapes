@@ -76,6 +76,37 @@ namespace UnitTestShapes
             Assert.AreEqual(9, myquad.Area());
         }
 
+        [TestMethod]
+        public void QuadScalingUpTest()
+        {
+            Quadrilateral myquad = new Quadrilateral(2, 2, 2, 2);
+            myquad.Scale(50);
+            Assert.AreEqual(3, myquad.Top);
+            Assert.AreEqual(3, myquad.Bottom);
+            Assert.AreEqual(3, myquad.Left);
+            Assert.AreEqual(3, myquad.Right);
+        }
+
+            [TestMethod]
+        public void QuadScaleDownTest()
+        {
+            //negative scalinhg
+            Quadrilateral myquad = new Quadrilateral(10, 10, 10, 10);
+            myquad.Scale(-50);
+            Assert.AreEqual(5, myquad.Top);
+            Assert.AreEqual(5, myquad.Bottom);
+            Assert.AreEqual(5, myquad.Left);
+            Assert.AreEqual(5, myquad.Right);
+        }
+
+        [TestMethod]
+        [ExpectedException(typeof(ArgumentException))]
+        public void InvalidScaleArgument()
+        {
+            Quadrilateral myquad = new Quadrilateral(2, 2, 2, 2);
+            myquad.Scale(0);
+        }
+
 
     [TestMethod]
         public void retangleAreaTest()

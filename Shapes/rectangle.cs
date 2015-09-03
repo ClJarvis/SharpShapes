@@ -13,7 +13,7 @@ namespace Shapes
 
         
 
-        public rectangle(float width, float length)
+        public rectangle(float width, float length) :base(width, width, length, length)
         {
             this.Top = width; //side1
             this.Right = length; //side2

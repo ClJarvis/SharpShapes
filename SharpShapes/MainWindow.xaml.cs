@@ -24,5 +24,9 @@ namespace SharpShapes
         {
             InitializeComponent();
         }
+        private void Button_Click(Object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Button Clicked");
+        }
     }
 }
