@@ -91,6 +91,14 @@
   </Choose>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+   ///test 
+    <ItemGroup>
+    <ProjectReference Include="..\Shapes\Shapes.csproj">
+     /// <Project>{23850fc2-fd24-462f-89f1-80995165a400}</Project>
+      <Name>Shapes</Name>
+    </ProjectReference>
+    /// end test
+  </ItemGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
