@@ -1,5 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
+using System.Collections.Generic; //Stuff like lists
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -11,7 +11,9 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
-using System.Windows.Shapes;
+//using System.Windows.Shapes;
+using Shapes;
+using System.Reflection;
 
 namespace SharpShapes
 {
@@ -23,7 +25,23 @@ namespace SharpShapes
         public MainWindow()
         {
             InitializeComponent();
+            SetComboBoxItems();
         }
+
+        private void SetComboBoxItems()
+        {
+            List<string> stuff = new List<string>();
+            //stuff.Add("Square");
+            //stuff.Add("Rectangle");
+            var quadType= typeof(Quadrilateral);
+
+           // combo1.ItemsSource = stuff; //combo1 came from <ComboBox x:name=combo1.
+         //   combo1.ItemsSource = Assembly.GetAssembly(typeof(Shapes.Shape)).GetTypes()
+           combo1.ItemsSource = Assembly.GetAssembly(typeof(Shapes.Shape)).GetTypes().Where(shapeType => shapeType.IsSubclassOf(typeof(Quadrilateral)));
+           
+        }
+
+
         private void Button_Click(Object sender, RoutedEventArgs e)
         {
             MessageBox.Show("Button Clicked");

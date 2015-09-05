@@ -11,3 +11,6 @@ C:\Users\chris\Documents\GitHub\SharpShapes\SharpShapes\obj\Debug\SharpShapes.Pr
 C:\Users\chris\Documents\GitHub\SharpShapes\SharpShapes\obj\Debug\SharpShapes.csproj.GenerateResource.Cache
 C:\Users\chris\Documents\GitHub\SharpShapes\SharpShapes\obj\Debug\SharpShapes.exe
 C:\Users\chris\Documents\GitHub\SharpShapes\SharpShapes\obj\Debug\SharpShapes.pdb
+C:\Users\chris\Documents\GitHub\SharpShapes\SharpShapes\bin\Debug\Shapes.dll
+C:\Users\chris\Documents\GitHub\SharpShapes\SharpShapes\bin\Debug\Shapes.pdb
+C:\Users\chris\Documents\GitHub\SharpShapes\SharpShapes\obj\Debug\SharpShapes.csprojResolveAssemblyReference.cache

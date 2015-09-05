@@ -9,7 +9,7 @@ namespace Shapes
     public class rectangle : Quadrilateral
 
     {
-        private float top;
+       // private float top;
 
         
 
@@ -20,6 +20,11 @@ namespace Shapes
             this.Left = length;
             this.Bottom = width;
         }
+
+        /// <summary>
+        ///Calculate Area for a Shape!
+        /// </summary>
+        /// <returns>Returns area as a flost</returns>
         public override float Area()
         {
             return (Top * Right); //Side1 * Side2
