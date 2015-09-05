@@ -60,13 +60,13 @@ namespace UnitTestShapes
         [TestMethod]
         public void TestSquareisASubclassofRectangle()
         {
-            Assert.IsTrue(typeof(Shapes.square).IsSubclassOf(typeof(Shapes.Rectangle)));
+            Assert.IsTrue(typeof(Shapes.Square).IsSubclassOf(typeof(Shapes.Rectangle)));
         }
 
         [TestMethod]
         public void TestSquareisASubclassOfQuadrilateral()
         {
-            Assert.IsTrue(typeof(Shapes.square).IsSubclassOf(typeof(Shapes.Rectangle)));
+            Assert.IsTrue(typeof(Shapes.Square).IsSubclassOf(typeof(Shapes.Rectangle)));
         }
 
 
