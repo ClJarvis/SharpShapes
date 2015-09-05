@@ -43,7 +43,9 @@ namespace SharpShapes
 
         public int NumberOfArguments(string className)
         {
-
+           var theClass =  Assembly.GetAssembly(typeof(Shapes.Shape)).GetTypes().Where(shapeType => shapeType.Name == className).First(); //this is a collection get the firat
+           var theClassConstructor = theClass.GetConstructors().First();
+            return theClassConstructor.GetParameters().Length;
         }
 
 
@@ -51,5 +53,13 @@ namespace SharpShapes
         {
             MessageBox.Show("Button Clicked!");
         }
-    }
+
+        private void combo1_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            var classType = combo1.SelectedValue as Type;
+         //   shapeWidth.IsEnabled = true;
+            int argCount = NumberOfArguments(classType.Name);
+          //  shapeHeight.IsEnabled = (argCount > 1);
+        }
+}
 }

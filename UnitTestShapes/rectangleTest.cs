@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Reflection;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace Shapes
 {
@@ -30,6 +32,12 @@ namespace Shapes
             return (Top * Right); //Side1 * Side2
         }
 
-
-    }
+        [TestMethod]
+        public void TestCorrectNumberofArguments()
+        {
+            var theClass = Assembly.GetAssembly(typeof(Shapes.Shape)).GetTypes().Where(shapeType => shapeType.Name == "Rectangle").First(); // This is a Collection. Get the First
+            var theClassConstructor = theClass.GetConstructors().First();
+            Assert.AreEqual(2,theClassConstructor.GetParameters().Length);
+        }
+}
 }
