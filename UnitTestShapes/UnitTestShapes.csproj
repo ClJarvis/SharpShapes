@@ -35,6 +35,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
     <Reference Include="System" />
     <Reference Include="System.Drawing" />
   </ItemGroup>
@@ -56,6 +58,9 @@
     <Compile Include="UnitTest1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="QuadrilateralTests.cs" />
+    <Compile Include="ShapeTest.cs" />
+    <Compile Include="SquareTest.cs" />
+    <Compile Include="rectangleTest.cs" />
     <None Include="rectangleTest" />
     <None Include="SquareTests" />
     <None Include="ShapeTest" />

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Drawing;
+using System.Windows.Media;
 using System.Windows.Controls;
 
 namespace Shapes
@@ -17,14 +17,14 @@ namespace Shapes
         /// <summary>
         /// "protected Set" allows child classes to use the setter!
         /// </summary>
-        public Color FillColor { get; /*protected  */set; }
-        public Color BorderColor { get; /*protected */ set; }
+        public Color FillColor { get; set; }
+        public Color BorderColor { get; set; }
 
         //Comes from the Concreteshape class in ShapeTest.
         public Shape()
         {
-            BorderColor = Color.NavajoWhite;
-            FillColor = Color.PapayaWhip;
+            BorderColor = Colors.NavajoWhite;
+            FillColor = Colors.PapayaWhip;
         }
 
         public virtual void DrawOnTo(Canvas theCanvas, int x, int y) { throw new NotImplementedException(); }

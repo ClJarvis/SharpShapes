@@ -2,6 +2,7 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Shapes;
 using System.Drawing;
+using System.Windows.Media;
 
 namespace UnitTestShapes
 { /// <summary>
@@ -30,15 +31,15 @@ namespace UnitTestShapes
         [TestMethod]
         public void TestingAbstractClassHasFillColor()
         {
-            omgMyShape.FillColor = Color.PapayaWhip;
-            Assert.AreEqual(Color.PapayaWhip, omgMyShape.FillColor);
+            omgMyShape.FillColor = Colors.PapayaWhip;
+            Assert.AreEqual(Colors.PapayaWhip, omgMyShape.FillColor);
         }
         [TestMethod]
         public void TestingAbstractClassHasBorderColor()
         {
-            omgMyShape.BorderColor = Color.NavajoWhite;
+            omgMyShape.BorderColor = Colors.NavajoWhite;
            // omgMyShape.BorderColor = Color.PapayaWhip;
-            Assert.AreEqual(Color.NavajoWhite, omgMyShape.BorderColor);
+            Assert.AreEqual(Colors.NavajoWhite, omgMyShape.BorderColor);
         }
         
     }

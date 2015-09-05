@@ -31,7 +31,7 @@
                 <Button Content="Create" Width="125" Height="25" Margin="5" Click="Button_Click"/>
             </StackPanel>
         </StackPanel>
-        <Canvas Background="Red" Width="auto" Height="500"/>
+        <Canvas x:Name="canvas" Background="Red" Width="auto" Height="500"/>
 
     </StackPanel>
 </Window>                                                                                                                                                                                                                                           

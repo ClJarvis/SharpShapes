@@ -4,6 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Controls;
+using System.Windows.Shapes;
+using System.Windows.Media;
+using System.Windows;
 
 namespace Shapes
 {
@@ -127,9 +130,32 @@ namespace Shapes
                 this.Right = Right * (100 + percent) / 100;
         }
 
+        public Polygon CreatePolygon()
+        {
+            Polygon poly = new Polygon();
+           // SolidBrush b = new System.Drawing.SolidBrush(this.FillColor);
+            poly.Fill = new SolidColorBrush( FillColor);
+            poly.Stroke = new SolidColorBrush(this.BorderColor);
+            poly.StrokeThickness = 2;
+            return poly;
+        }
+
         public override void DrawOnTo(Canvas theCanvas, int x, int y)
         {
-            base.DrawOnTo(theCanvas, x, y);
+            //base.DrawOnTo(theCanvas, x, y);
+            Polygon myPolygon = CreatePolygon();
+            Point p1 = new Point(x, y);
+            Point p2 = new Point(x, y+this.Left); //OR THIS.rIGHT
+            Point p3 = new Point(x+this.Bottom,y+this.Right);
+            Point p4 = new Point(x+this.Top, y);
+            PointCollection myPoints = new PointCollection();
+            myPoints.Add(p1);
+            myPoints.Add(p2);
+            myPoints.Add(p3);
+            myPoints.Add(p4);
+            myPolygon.Points = myPoints;
+
+            theCanvas.Children.Add(myPolygon);
         }
     }
 }
