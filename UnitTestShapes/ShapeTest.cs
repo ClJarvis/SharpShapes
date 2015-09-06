@@ -1,9 +1,10 @@
 ﻿using System;
-using System.Drawing;
+//using System.Drawing;
+using System.Windows.Media;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Collections.Generic;
 using System.Reflection;
-using System.Windows.Media;
+
 
 namespace UnitTestShapes
 {
@@ -50,23 +51,23 @@ namespace UnitTestShapes
         }
 
         [TestMethod]
-        public void FindShapes()
+        public void FindShapesTest()
         {
-            List<string> classes = new List<string> { "Square", "Rectangle", "Shape" };
-            CollectionAssert.AreEqual(classes, Assembly.GetAssembly(typeof(Shapes.Shape)).GetTypes());
+            List<string> classes = new List<string> { "Square", "Rectangle", "Shape"};
+            CollectionAssert.AreEqual(classes,Assembly.GetAssembly(typeof(Shapes.Shape)).GetTypes());
             //Assert.AreEqual(typeof(Shapes.Shape), typeof(ConcreteShape));
         }
 
         [TestMethod]
         public void TestSquareisASubclassofRectangle()
         {
-            Assert.IsTrue(typeof(Shapes.Square).IsSubclassOf(typeof(Shapes.Rectangle)));
+            Assert.IsTrue(typeof(Shapes.square).IsSubclassOf(typeof(Shapes.Rectangle)));
         }
 
         [TestMethod]
         public void TestSquareisASubclassOfQuadrilateral()
         {
-            Assert.IsTrue(typeof(Shapes.Square).IsSubclassOf(typeof(Shapes.Rectangle)));
+            Assert.IsTrue(typeof(Shapes.square).IsSubclassOf(typeof(Shapes.Rectangle)));
         }
 
 
