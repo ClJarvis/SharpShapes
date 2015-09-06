@@ -1,8 +1,6 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Shapes;
-using System.Reflection;
-using System.Linq;
 
 namespace UnitTestShapes
 {
