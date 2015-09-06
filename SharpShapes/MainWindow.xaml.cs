@@ -57,9 +57,9 @@ namespace SharpShapes
         private void combo1_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             var classType = combo1.SelectedValue as Type;
-         //  shapeWidth.IsEnabled = true;
+          ShapeWidth.IsEnabled = true;
             int argCount = NumberOfArguments(classType.Name);
-          //  shapeHeight.IsEnabled = (argCount > 1);
+           ShapeHeight.IsEnabled = (argCount > 1);
         }
 }
 }
